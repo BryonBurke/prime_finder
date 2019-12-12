@@ -1,0 +1,23 @@
+DEFINING METHODS
+def scramble
+  reversed_string = self.reverse()
+  upcased_string = reversed_string.upcase()
+  upcased_string
+end
+
+"hello".scramble()
+=> "OLLEH"
+
+SAME METHOD
+def scramble
+  self.reverse().upcase()
+end
+
+SAME METHOD, SELF IS IMPLICIT RECIEVER
+def scramble
+  reverse().upcase()
+end
+
+def addiply(second_number, third_number)
+  (self + second_number + third_number) * 3
+end

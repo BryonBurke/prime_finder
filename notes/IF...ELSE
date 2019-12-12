@@ -1,0 +1,16 @@
+IF..ELSE
+def big_enough(height, age)
+  if (height > 5) & (age > 8)
+    "You can ride the roller coaster!"
+  elsif (height > 5)
+    "You're tall enough but not old enough..."
+  elsif (age > 8)
+    "You're old enough but not tall enough..."
+  else
+    "You aren't tall enough or old enough to ride yet."
+  end
+end
+
+def in_range?(number)
+  (number < 5) | (number > 10)
+end

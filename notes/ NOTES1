@@ -1,0 +1,76 @@
+ACCESSING IRB
+If you're on a Mac: open your Applications folder, then go into your Utilities folder and launch Terminal. Type irb and press Enter.
+
+FIND OUT THE KIND OF OBJECT SOMETHING IS
+> "Hello world!".class()
+=> String
+
+FIND OUT WHAT KINDS OF METHODS ARE AVAILABLE
+"Hello world!".methods()
+
+NUMBER AND FLOAT
+> 5.even?()
+=> false
+> 5.next()
+=> 6
+> 5.positive?()
+=> true
+> 5.methods()
+
+> 5.3.class()
+=> Float
+> 5.3.round()
+=> 5
+> 8.1.ceil()
+=> 9
+
+CHAIN METHODS. A NUMBER IS AN OBJECT
+> 5.3.round().next()
+=> 6
+> 5.3.ceil().next()
+=> 7
+
+
+
+RANGES
+> (1..10).size()
+=> 10
+> ("a".."z").end()
+=> "z"
+
+LOCAL VARIABLE
+> greeting = "hello"
+=> "hello"
+> greeting.upcase()
+=> "HELLO"
+> greeting
+=> "hello"
+> greeting.upcase!()
+=> "HELLO"
+> greeting
+=> "HELLO"
+
+CONSTANT
+>FREEZING_POINT = 32
+
+SYMBOLS kind of like a string but cannot be changed
+> :i_am_a_symbol
+
+
+
+BOOLEANS
+> 5.odd?()
+=> true
+> 6 < 5
+=> false
+> "cat".eql?("dog")
+=> false
+> (1..10).cover?(5)
+=> true
+
+
+
+GLOBAL VARIABLE
+$global = "This is a global variable"
+> defined? $global
+=> "global-variable"

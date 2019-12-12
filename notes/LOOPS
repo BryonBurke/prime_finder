@@ -1,0 +1,55 @@
+TIMES LOOPS
+number = 0
+5.times() do
+  number = number + 1
+end
+> number
+=> 5
+
+EACH LOOPS
+def array_doubler(array)
+  new_array = []
+  array.each do |array_element|
+    new_array.push(array_element * 2)
+  end
+  new_array
+end
+> array_doubler([1,2,3]
+=> [2,4,6]
+
+numbers = (1..10)
+sum = 0
+numbers.each() do |number|
+  sum = sum + (number)
+  end
+> sum
+=> 55
+
+WHILE AND UNTIL LOOPS
+x = 0
+array = []
+while (x < 10 )
+  x = x + 1
+  array.push(x)
+end
+> array
+=> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+x = 0
+array = []
+until (x >= 10 )
+  x = x + 1
+  array.push(x)
+end
+array
+=> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+PLAIN OLD LOOPS
+counter = 0
+loop do
+  counter += 1
+  if counter > 10
+    break
+  end
+  puts "hi"
+end

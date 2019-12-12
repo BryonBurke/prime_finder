@@ -1,0 +1,12 @@
+GemFile  just like this with no extension
+
+source 'https://rubygems.org'
+
+gem 'rspec'
+gem 'pry'
+
+gem install <gem-name>
+
+to install gems  >bundle install
+this creates GemFile.lock
+this shows all the gems, leave it alone
